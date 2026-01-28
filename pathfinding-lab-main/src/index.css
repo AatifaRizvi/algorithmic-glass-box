@@ -1,0 +1,336 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 187 75% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 20% 93%;
+    --secondary-foreground: 215 25% 25%;
+
+    --muted: 210 15% 90%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 187 60% 95%;
+    --accent-foreground: 187 75% 30%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 187 75% 40%;
+
+    --radius: 0.75rem;
+
+    /* Algorithm visualization colors */
+    --node-default: 215 20% 85%;
+    --node-default-foreground: 215 25% 25%;
+    --node-current: 38 95% 55%;
+    --node-current-foreground: 38 100% 15%;
+    --node-visited: 152 70% 45%;
+    --node-visited-foreground: 0 0% 100%;
+    --node-frontier: 200 85% 55%;
+    --node-frontier-foreground: 0 0% 100%;
+    --node-start: 262 80% 55%;
+    --node-start-foreground: 0 0% 100%;
+    --node-goal: 340 75% 55%;
+    --node-goal-foreground: 0 0% 100%;
+
+    /* Edge colors */
+    --edge-default: 215 15% 75%;
+    --edge-path: 152 70% 45%;
+    --edge-exploring: 38 95% 55%;
+
+    /* Glass effect */
+    --glass-bg: 0 0% 100% / 0.8;
+    --glass-border: 0 0% 100% / 0.5;
+    --glass-shadow: 215 25% 15% / 0.08;
+
+    /* Panel backgrounds */
+    --panel-graph: 210 25% 97%;
+    --panel-data: 200 30% 97%;
+    --panel-narration: 187 25% 97%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(187 75% 40%) 0%, hsl(200 85% 45%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(262 80% 55%) 0%, hsl(340 75% 55%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(152 70% 45%) 0%, hsl(170 70% 40%) 100%);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 20% 8%;
+    --foreground: 210 20% 95%;
+
+    --card: 220 20% 10%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 220 20% 10%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 187 80% 50%;
+    --primary-foreground: 220 20% 8%;
+
+    --secondary: 220 15% 16%;
+    --secondary-foreground: 210 20% 90%;
+
+    --muted: 220 15% 18%;
+    --muted-foreground: 215 15% 55%;
+
+    --accent: 187 40% 18%;
+    --accent-foreground: 187 80% 70%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 18%;
+    --input: 220 15% 18%;
+    --ring: 187 80% 50%;
+
+    --node-default: 220 15% 25%;
+    --node-default-foreground: 210 20% 85%;
+    --node-current: 38 95% 55%;
+    --node-current-foreground: 38 100% 10%;
+    --node-visited: 152 70% 40%;
+    --node-visited-foreground: 0 0% 100%;
+    --node-frontier: 200 85% 50%;
+    --node-frontier-foreground: 0 0% 100%;
+    --node-start: 262 75% 60%;
+    --node-start-foreground: 0 0% 100%;
+    --node-goal: 340 80% 60%;
+    --node-goal-foreground: 0 0% 100%;
+
+    --edge-default: 220 15% 30%;
+    --edge-path: 152 70% 45%;
+    --edge-exploring: 38 95% 55%;
+
+    --glass-bg: 220 20% 12% / 0.9;
+    --glass-border: 220 15% 22% / 0.8;
+    --glass-shadow: 0 0% 0% / 0.4;
+
+    --panel-graph: 220 20% 10%;
+    --panel-data: 215 20% 10%;
+    --panel-narration: 210 20% 10%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(187 80% 50%) 0%, hsl(200 85% 55%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(262 75% 60%) 0%, hsl(340 80% 60%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(152 70% 40%) 0%, hsl(170 70% 35%) 100%);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  code, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .font-display {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-card/90 backdrop-blur-xl border border-border/60 shadow-xl;
+    box-shadow: 
+      0 4px 6px -1px hsl(var(--glass-shadow)),
+      0 2px 4px -2px hsl(var(--glass-shadow)),
+      inset 0 1px 0 0 hsl(var(--glass-border));
+  }
+
+  .glass-panel-elevated {
+    @apply glass-panel;
+    box-shadow: 
+      0 10px 25px -5px hsl(var(--glass-shadow)),
+      0 8px 10px -6px hsl(var(--glass-shadow)),
+      inset 0 1px 0 0 hsl(var(--glass-border));
+  }
+
+  .node-pulse {
+    animation: nodePulse 1.5s ease-in-out infinite;
+  }
+
+  .node-glow {
+    filter: drop-shadow(0 0 12px currentColor);
+  }
+
+  .edge-animate {
+    stroke-dasharray: 8;
+    animation: edgeFlow 0.5s linear infinite;
+  }
+
+  .panel-header {
+    @apply text-xs font-semibold uppercase tracking-widest text-muted-foreground border-b border-border/50 pb-3 mb-4 flex items-center gap-2;
+  }
+
+  .section-title {
+    @apply text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground/70 mb-2;
+  }
+
+  .data-structure-item {
+    @apply px-3 py-2.5 rounded-lg text-sm font-mono transition-all duration-300;
+  }
+
+  .data-structure-item-enter {
+    animation: itemEnter 0.3s ease-out;
+  }
+
+  .narration-text {
+    @apply text-sm leading-relaxed;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .gradient-border {
+    position: relative;
+  }
+
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: var(--gradient-primary);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 20px hsl(187 80% 50% / 0.3), 0 0 40px hsl(187 80% 50% / 0.1);
+  }
+
+  .glow-success {
+    box-shadow: 0 0 20px hsl(152 70% 45% / 0.3), 0 0 40px hsl(152 70% 45% / 0.1);
+  }
+
+  .btn-glow {
+    @apply relative overflow-hidden;
+  }
+
+  .btn-glow::after {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+    background: radial-gradient(circle at center, hsl(187 80% 50% / 0.3) 0%, transparent 70%);
+  }
+
+  .btn-glow:hover::after {
+    @apply opacity-100;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+}
+
+@keyframes nodePulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.9;
+  }
+}
+
+@keyframes edgeFlow {
+  0% {
+    stroke-dashoffset: 16;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes itemEnter {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    hsl(187 80% 50% / 0.1) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
