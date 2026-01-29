@@ -1,6 +1,8 @@
 🧪 Algorithmic Glass Box by AlgoVista
  -------------------------------------
 
+ ![Homepage Screenshot](./screenshots/homepage.png)
+
 🌐 Live Demo: ([https://algovista-glassbox.vercel.app/](https://algovista-glassbox.vercel.app/))
 
 Algorithmic Glass Box is an interactive virtual lab designed to make pathfinding algorithms transparent, visual, and intuitive.
@@ -35,15 +37,19 @@ Hard to visualize dynamically
 
 BFS (Breadth-First Search)
 Explores nodes level by level (unweighted graphs)
+![BFS Screenshot](./screenshots/bfs.png)
 
 DFS (Depth-First Search)
 Explores deeply before backtracking
+![DFS Screenshot](./screenshots/dfs.png)
 
 Dijkstra’s Algorithm
 Guarantees shortest path in weighted graphs
+![Dijkstra Screenshot](./screenshots/dijkstra.png)
 
 A*
 Heuristic-guided optimal pathfinding
+![A* Screenshot](./screenshots/a-star.png)
 
 
 🧠 Heuristic Functions (Selectable)
@@ -216,5 +222,6 @@ helping learners move from confusion to clarity — one step at a time.
 🏆 Submission-form description
 
 Just say it 💙
+
 
 
