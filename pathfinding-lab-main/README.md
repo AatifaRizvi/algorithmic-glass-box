@@ -172,8 +172,11 @@ This represents true algorithm execution, not pre-made animations.
 🚀 Local Setup
 --------------------
 git clone[ https://github.com/AatifaRizvi/algorithmic-glass-box.git]( https://github.com/AatifaRizvi/algorithmic-glass-box.git)
+
 cd pathfinding-lab-main
+
 npm install
+
 npm run dev
 
 
@@ -222,6 +225,7 @@ helping learners move from confusion to clarity — one step at a time.
 🏆 Submission-form description
 
 Just say it 💙
+
 
 
 
