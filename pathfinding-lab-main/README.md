@@ -220,11 +220,7 @@ MIT License — free to use for learning, teaching, and experimentation.
 Algorithmic Glass Box turns algorithms into transparent systems,
 helping learners move from confusion to clarity — one step at a time.
 
-📸 README screenshots layout
 
-🏆 Submission-form description
-
-Just say it 💙
 
 
 
