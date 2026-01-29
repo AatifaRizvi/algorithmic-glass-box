@@ -1,13 +1,14 @@
 🧪 Algorithmic Glass Box by AlgoVista
-
+ -------------------------------------
 
 🌐 Live Demo: ([https://algovista-glassbox.vercel.app/](https://algovista-glassbox.vercel.app/))
 
 Algorithmic Glass Box is an interactive virtual lab designed to make pathfinding algorithms transparent, visual, and intuitive.
 Instead of treating algorithms as black boxes, this project lets users see every internal step — frontier updates, visited nodes, heuristics, and decision-making in real time.
 
-🎯 Objective
 
+🎯 Objective
+---------------
 Pathfinding algorithms are critical in:
 
 Navigation systems (Google Maps, GPS)
@@ -29,6 +30,7 @@ Hard to visualize dynamically
 👉 Algorithmic Glass Box solves this by offering a step-by-step, glass-box view of how algorithms actually work.
 
 ✨ Core Features
+  ----------------
 🔍 Pathfinding Algorithms
 
 BFS (Breadth-First Search)
@@ -43,8 +45,9 @@ Guarantees shortest path in weighted graphs
 A*
 Heuristic-guided optimal pathfinding
 
-🧠 Heuristic Functions (Selectable)
 
+🧠 Heuristic Functions (Selectable)
+--------------------------------------
 Euclidean Distance
 
 Manhattan Distance
@@ -56,8 +59,9 @@ Zero Heuristic (Dijkstra Mode)
 
 Each heuristic dynamically affects how A* explores the graph.
 
-🎛️ Full Control Panel
 
+🎛️ Full Control Panel
+--------------------------
 Algorithm selection
 
 Graph mode switching
@@ -73,7 +77,7 @@ Step-by-step execution
 Reset simulation
 
 🧩 Graph Modes
-
+----------------------
 Abstract Graph Mode
 Node-edge representation for algorithm fundamentals
 
@@ -81,7 +85,7 @@ City Map Mode
 Real-world inspired weighted graph
 
 📊 Glass-Box Visualization
-
+------------------------------
 Clear legend for:
 
 Start node
@@ -100,8 +104,9 @@ Live frontier updates
 
 Path reconstruction after completion
 
-📖 Learning-First Design
 
+📖 Learning-First Design
+---------------------------------
 Narration panel explains what the algorithm is doing
 
 Data structure panel shows:
@@ -110,21 +115,29 @@ Queue / Stack / Priority Queue state
 
 Designed as a virtual lab for students
 
+
 🛠️ Tech Stack
-Technology	Usage
-React + TypeScript	Component-based UI & safety
-Vite	Fast development & builds
-Tailwind CSS	Responsive, clean UI
-Custom Hooks	Algorithm logic
-Vercel	Production deployment
+------------------
+| Technology             | Usage                       |
+| ---------------------- | --------------------------- |
+| **React + TypeScript** | Component-based UI & safety |
+| **Vite**               | Fast development & builds   |
+| **Tailwind CSS**       | Responsive, clean UI        |
+| **Custom Hooks**       | Algorithm logic             |
+| **Vercel**             | Production deployment       |
+
 🧪 Algorithm Capabilities Comparison
-Algorithm	Weighted	Optimal	Heuristic
-BFS	❌	✅	❌
-DFS	❌	❌	❌
-Dijkstra	✅	✅	❌
-A*	✅	✅	✅
+---------------------------------------
+| Algorithm | Weighted | Optimal | Heuristic |
+| --------- | -------- | ------- | --------- |
+| BFS       | ❌        | ✅       | ❌         |
+| DFS       | ❌        | ❌       | ❌         |
+| Dijkstra  | ✅        | ✅       | ❌         |
+| A*        | ✅        | ✅       | ✅         |
+
 
 ⚙️ How the Simulation Works
+------------------------------
 
 User selects:
 
@@ -151,6 +164,7 @@ Final path is reconstructed and displayed
 This represents true algorithm execution, not pre-made animations.
 
 🚀 Local Setup
+--------------------
 git clone[ https://github.com/AatifaRizvi/algorithmic-glass-box.git]( https://github.com/AatifaRizvi/algorithmic-glass-box.git)
 cd pathfinding-lab-main
 npm install
@@ -161,6 +175,7 @@ Open in browser:
 👉 http://localhost:5173
 
 🌱 Future Scope
+------------------
 
 Maze generation
 
@@ -174,7 +189,8 @@ Mobile-first optimizations
 
 Exportable step logs for learning
 
-👥 Team
+👥 Developer 
+--------------
 
 Team Name: AlgoVista
 Project: Algorithmic Glass Box – Pathfinding Visualization Lab
@@ -185,18 +201,19 @@ Developer: Aatifa Rizvi
 ))
 
 📜 License
+-------------
 
 MIT License — free to use for learning, teaching, and experimentation.
 
 ⭐ Final Thought
+-------------------
 
 Algorithmic Glass Box turns algorithms into transparent systems,
 helping learners move from confusion to clarity — one step at a time.
-
-🧑‍⚖️ Judge Q&A answers
 
 📸 README screenshots layout
 
 🏆 Submission-form description
 
 Just say it 💙
+
