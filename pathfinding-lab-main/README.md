@@ -4,6 +4,8 @@
  ![Homepage Screenshot](./screenshots/homepage.png)
 
 🌐 Live Demo: ([https://algovista-glassbox.vercel.app/](https://algovista-glassbox.vercel.app/))
+🎥 Project Demo Video:  
+👉 ([https://youtu.be/kO3Rj9uaetg](https://youtu.be/kO3Rj9uaetg))
 
 Algorithmic Glass Box is an interactive virtual lab designed to make pathfinding algorithms transparent, visual, and intuitive.
 Instead of treating algorithms as black boxes, this project lets users see every internal step — frontier updates, visited nodes, heuristics, and decision-making in real time.
@@ -255,6 +257,7 @@ MIT License — free to use for learning, teaching, and experimentation.
 
 Algorithmic Glass Box turns algorithms into transparent systems,
 helping learners move from confusion to clarity — one step at a time.
+
 
 
 
