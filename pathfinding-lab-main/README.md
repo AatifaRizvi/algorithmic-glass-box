@@ -8,6 +8,42 @@
 Algorithmic Glass Box is an interactive virtual lab designed to make pathfinding algorithms transparent, visual, and intuitive.
 Instead of treating algorithms as black boxes, this project lets users see every internal step — frontier updates, visited nodes, heuristics, and decision-making in real time.
 
+📋 Table of Contents
+------------------------
+
+🧪 Algorithmic Glass Box by AlgoVista
+
+🎯 Objective
+
+✨ Core Features
+
+🔍 Pathfinding Algorithms
+
+🧠 Heuristic Functions
+
+🎛️ Full Control Panel
+
+🧩 Graph Modes
+
+📊 Glass-Box Visualization
+
+📖 Learning-First Design
+
+🛠️ Tech Stack
+
+🧪 Algorithm Capabilities Comparison
+
+⚙️ How the Simulation Works
+
+🚀 Local Setup
+
+🌱 Future Scope
+
+👥 Developer
+
+📜 License
+
+⭐ Final Thought
 
 🎯 Objective
 ---------------
@@ -219,6 +255,7 @@ MIT License — free to use for learning, teaching, and experimentation.
 
 Algorithmic Glass Box turns algorithms into transparent systems,
 helping learners move from confusion to clarity — one step at a time.
+
 
 
 
